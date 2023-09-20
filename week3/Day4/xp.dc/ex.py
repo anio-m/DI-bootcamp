@@ -29,6 +29,14 @@ print(get_random_sentence(4))
 
 def main ():
     print("The program uses files/texts outside the program with the help of 'with open' and can change, add and whatever they want.")
-
+num = int(input("what your lenght of your sentence: \n"))
+try:
+  if not 2 < num > 20:
+     raise ValueError("Please enter number between 2 and 20")
+except ValueError as error:
+   return error
+else:
+   
+   
    
         
