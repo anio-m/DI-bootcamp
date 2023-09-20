@@ -26,21 +26,11 @@ class Circle :
     def __eq__(self, other_circle) :
         return self.radius == other_circle.radius
     
-    # taken by default
+ 
     def __lt__(self, other_circle) :
        return self.radius > other_circle.radius
 
-    # @staticmethod
-    # def get_radius(circle) :
-    #     return circle.radius
-
-    # @classmethod
-    # def sort_circles(cls) :
-    #     new_circles = sorted(cls.all_circles, key=cls.get_radius)
-    #     # for circle in new_circles :
-    #     #     print(circle)
-    #     return new_circles
-
+    
 
 c1 = Circle(radius = 2) #keyword argument
 c2 = Circle(radius = 4)
